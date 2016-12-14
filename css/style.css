@@ -1,0 +1,439 @@
+html, body {
+  height: 100%;
+  min-height: 100%;
+  width: 100%; }
+
+body {
+  background: #fefdf4;
+  overflow: hidden; }
+
+footer {
+  position: absolute;
+  width: 100%;
+  background: #0f728e;
+  bottom: 0px;
+  z-index: 999;
+  cursor: pointer;
+  min-height: 58px; }
+  footer.active {
+    cursor: default; }
+  footer .inner {
+    padding: 20px 20px 30px 20px; }
+    footer .inner .timer {
+      position: absolute;
+      bottom: 0px;
+      height: 60px; }
+      footer .inner .timer .clock {
+        width: 39px;
+        height: 53px;
+        margin-right: 10px;
+        background: url(../img/footer-clock.png) no-repeat center 10px;
+        float: left; }
+      footer .inner .timer .time {
+        float: left;
+        color: white;
+        font-family: "WWFRegular";
+        position: relative; }
+        footer .inner .timer .time .label {
+          font-size: 11px;
+          bottom: 0;
+          position: absolute;
+          text-align: center;
+          width: 21px; }
+        footer .inner .timer .time .value {
+          height: 53px;
+          line-height: 53px;
+          font-size: 28px; }
+        footer .inner .timer .time.div {
+          width: 10px;
+          height: 53px;
+          line-height: 53px;
+          background: url(../img/footer-timer-div.png) no-repeat center center;
+          padding: 0 2px; }
+    footer .inner .lets-change {
+      color: white;
+      font-family: "WWFRegular";
+      position: absolute;
+      font-size: 44px;
+      bottom: 0px;
+      padding-left: 70px;
+      background: url(../img/footer-twitter-logo.png) no-repeat left center;
+      left: 50%;
+      width: 380px;
+      margin-left: -200px; }
+    footer .inner .switch-off {
+      font-family: "WWFRegular";
+      position: absolute;
+      bottom: 8px;
+      right: 20px;
+      line-height: 20px;
+      font-size: 20px; }
+      footer .inner .switch-off .smaller {
+        font-size: 17px; }
+      footer .inner .switch-off a {
+        color: white;
+        text-decoration: none; }
+    footer .inner .page .inner {
+      display: none;
+      width: 805px;
+      margin: 0 auto; }
+      footer .inner .page .inner h1 {
+        font-family: "WWFRegular";
+        margin: 0;
+        padding: 0 0 0 30px;
+        font-weight: normal;
+        font-size: 50px;
+        color: #75cee8;
+        line-height: 50px;
+        width: 820px; }
+        footer .inner .page .inner h1 .white {
+          color: white; }
+      footer .inner .page .inner .tweet-now {
+        width: 150px;
+        height: 150px;
+        background: url(../img/footer-tweet-now.png) no-repeat center center;
+        margin-top: 40px;
+        position: absolute;
+        left: 50%;
+        margin-left: -85px; }
+        footer .inner .page .inner .tweet-now:hover {
+          cursor: pointer; }
+      footer .inner .page .inner .facebook {
+        width: 150px;
+        height: 150px;
+        background: url(../img/footer-facebook.png) no-repeat center center;
+        margin-top: 40px;
+        position: absolute;
+        left: 50%;
+        margin-left: -270px; }
+        footer .inner .page .inner .facebook:hover {
+          cursor: pointer; }
+      footer .inner .page .inner .google {
+        width: 150px;
+        height: 150px;
+        background: url(../img/footer-google.png) no-repeat center center;
+        margin-top: 40px;
+        position: absolute;
+        left: 50%;
+        margin-left: 95px; }
+        footer .inner .page .inner .google:hover {
+          cursor: pointer; }
+      footer .inner .page .inner #close {
+        text-align: center;
+        right: 0;
+        top: 44px;
+        z-index: 1100; }
+      footer .inner .page .inner .embed h2 {
+        color: white;
+        font-family: "WWFRegular";
+        text-align: center;
+        font-size: 30px;
+        font-weight: normal;
+        margin-top: 200px; }
+      footer .inner .page .inner .embed .code {
+        width: 500px;
+        margin: 0 auto;
+        border: 2px #68c8e4 dashed;
+        padding: 10px;
+        color: white;
+        text-align: center; }
+        footer .inner .page .inner .embed .code textarea {
+          background: none;
+          border: none;
+          color: white;
+          width: 500px;
+          resize: none;
+          outline: none;
+          text-align: center;
+          height: 80px;
+          padding: 0; }
+  footer .tab {
+    width: 57px;
+    height: 29px;
+    position: absolute;
+    top: -15px;
+    background: url(../img/footer-tab.png) no-repeat;
+    left: 50%;
+    margin-left: -28px; }
+
+#logo {
+  position: absolute;
+  z-index: 1000;
+  left: 20px; }
+  #logo img {
+    position: absolute;
+    top: 0; }
+    #logo img.logo-white {
+      left: 1px;
+      display: none; }
+
+.nav {
+  position: absolute;
+  width: 88px;
+  height: 88px;
+  background: #75cee8;
+  color: white;
+  line-height: 88px;
+  font-family: "WWFRegular";
+  font-size: 24px;
+  cursor: pointer;
+  margin-top: -44px;
+  top: 50%;
+  z-index: 100; }
+  .nav .inner {
+    position: absolute;
+    width: 88px;
+    height: 88px;
+    text-align: center; }
+
+#next {
+  right: 0; }
+  #next .inner {
+    top: 0;
+    left: 0; }
+
+#prev {
+  left: 0;
+  display: none; }
+  #prev .inner {
+    top: 0;
+    right: 0; }
+
+#main {
+  padding-top: 50px; }
+
+.section {
+  width: 850px;
+  height: 450px;
+  margin: 0 auto;
+  position: relative;
+  display: none; }
+  .section h2 {
+    font-family: "WWFRegular";
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 50px;
+    color: #75cee8;
+    line-height: 50px;
+    width: 700px;
+    position: absolute;
+    top: -20px;
+    right: 0; }
+
+#horizon {
+  position: absolute;
+  background: #fdf9dd;
+  width: 100%;
+  bottom: 0;
+  top: 425px;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  display: none; }
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 850px;
+  height: 450px; }
+
+.canvas {
+  position: absolute; }
+
+.section-0 {
+  text-align: center; }
+  .section-0 p {
+    font-family: "WWFRegular";
+    margin: 0;
+    padding: 0; }
+    .section-0 p.line-1 {
+      color: #75cee8;
+      font-size: 70px;
+      line-height: 70px; }
+    .section-0 p.line-2 {
+      color: #75cee8;
+      font-size: 62px;
+      line-height: 63px; }
+    .section-0 p.line-3 {
+      color: #81d2cb;
+      font-size: 63px;
+      line-height: 63px; }
+      .section-0 p.line-3 img {
+        padding-left: 10px; }
+  .section-0 .home-food-image {
+    padding-top: 80px;
+    padding-bottom: 20px; }
+
+.slider {
+  position: relative;
+  top: 420px;
+  width: 345px;
+  height: 17px;
+  margin: 0 auto;
+  background: url(../img/slider-bg.png) no-repeat; }
+  .slider .ui-slider-handle {
+    width: 62px;
+    height: 62px;
+    background: url(../img/slider-handle.png) no-repeat;
+    position: absolute;
+    margin-left: -31px;
+    margin-top: -24px;
+    outline: none; }
+    .slider .ui-slider-handle .handle-highlight {
+      width: 62px;
+      height: 62px;
+      background: url(../img/slider-highlight.png) no-repeat; }
+
+.section-1 .background {
+  background: url(../img/s1-background.png) no-repeat center 115px; }
+.section-1 .forest {
+  background: url(../img/s1-forest.png) no-repeat 60px 158px; }
+.section-1 #canvas-1-sun {
+  z-index: -1; }
+
+.section-2 h2 {
+  width: 620px; }
+.section-2 .background {
+  background: url(../img/s2-background.png) no-repeat 71px 145px; }
+.section-2 .forest {
+  background: url(../img/s2-forest.png) no-repeat right 140px;
+  right: 0;
+  left: auto; }
+.section-2 .farm {
+  background: url(../img/s2-farm.png) no-repeat 70px 212px;
+  width: 0; }
+
+.section-3 h2 {
+  padding-right: 80px;
+  width: 580px; }
+.section-3 .earth {
+  background: url(../img/s3-earth.png) no-repeat center;
+  z-index: -1;
+  top: 340px; }
+.section-3 .co2 {
+  background: url(../img/s3-co2.png) no-repeat center center;
+  z-index: -2;
+  top: 240px; }
+.section-3 #canvas-3-food {
+  z-index: -1; }
+
+.section-4 h2 {
+  width: 600px; }
+.section-4 .person1 {
+  width: 136px;
+  height: 228px;
+  background: url(../img/s4-person1.png) no-repeat;
+  left: 40px;
+  top: 170px; }
+.section-4 .person2 {
+  width: 136px;
+  height: 232px;
+  background: url(../img/s4-person2.png) no-repeat;
+  right: 40px;
+  left: auto;
+  top: 168px; }
+
+.section-5 h2 {
+  width: 820px;
+  position: absolute;
+  left: 70px; }
+.section-5 #canvas-5-food {
+  left: 469px;
+  top: 100px; }
+.section-5 .people {
+  background: url(../img/s5-people.png) no-repeat;
+  width: 293px;
+  height: 254px;
+  top: 140px;
+  left: 135px; }
+.section-5 .bin {
+  background: url(../img/s5-bin.png) no-repeat;
+  width: 131px;
+  height: 150px;
+  top: 250px;
+  left: 455px; }
+.section-5 .money {
+  font-family: "WWFRegular";
+  font-weight: normal;
+  font-size: 50px;
+  color: #75cee8;
+  line-height: 50px;
+  width: 700px;
+  left: 600px;
+  top: 240px;
+  margin-top: 80px; }
+  .section-5 .money .line {
+    background: #d2e17d;
+    height: 3px;
+    width: 30px;
+    position: absolute;
+    left: -40px;
+    top: 23px; }
+
+.section-6 h2 {
+  width: auto;
+  margin-right: 200px; }
+.section-6 .money .pound {
+  position: absolute;
+  left: 17px;
+  width: 40px;
+  height: 100px;
+  background: white;
+  text-align: left;
+  z-index: 100; }
+.section-6 .money .inner {
+  height: 100px;
+  width: 40px;
+  background: white;
+  border: solid 15px #b0dedc;
+  margin: 0 auto;
+  margin-top: 150px;
+  position: relative;
+  padding: 10px 20px 10px 50px;
+  font-family: "WWFRegular";
+  font-weight: normal;
+  font-size: 80px;
+  color: #75cee8;
+  line-height: 100px;
+  text-align: center; }
+.section-6 .money .right-hand {
+  width: 120px;
+  height: 100px;
+  position: absolute;
+  background: url(../img/s6-hand-right.png) no-repeat right center;
+  right: -120px; }
+.section-6 .money .left-hand {
+  width: 120px;
+  height: 100px;
+  position: absolute;
+  background: url(../img/s6-hand-left.png) no-repeat left center;
+  left: -120px; }
+.section-6 .money .wrapper {
+  position: absolute;
+  overflow: hidden;
+  width: 40px;
+  height: 100%; }
+.section-6 .money .slide {
+  width: 500px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -246px; }
+
+.section-7 h2 {
+  width: 750px; }
+.section-7 .main {
+  background: url(../img/s7-main.png) no-repeat center 135px; }
+
+#preloader {
+  position: absolute;
+  top: 300px;
+  width: 100%;
+  text-align: center;
+  z-index: 800;
+  font-family: "WWFRegular";
+  font-size: 80px;
+  color: #f2eed1;
+  display: none; }
